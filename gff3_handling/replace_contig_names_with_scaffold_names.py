@@ -71,10 +71,10 @@ if __name__ == "__main__":
     SCRIPT = "replace_contig_names_with_scaffold_names.py"
     # argument set up
     parser = argparse.ArgumentParser(description='This replaces scaffold names with contig/chr names!')
-    parser.add_argument("-i", help="This is the input gff3 file")
+    parser.add_argument("-g", help="This is the input gff3 file")
     parser.add_argument("-f", help="This is the genome fasta file")
     args = parser.parse_args()
-    input_data = args.i # gff3 file to have chr_IDs (e.g. '1') to be replaced with unique IDs (e.g. HG996486.1) (e.g. 'Abrostola_tripartita_subset.genes.gff3)
+    input_data = args.g # gff3 file to have chr_IDs (e.g. '1') to be replaced with unique IDs (e.g. HG996486.1) (e.g. 'Abrostola_tripartita_subset.genes.gff3)
     genome_fasta = args.f # genome fasta
 
 # run functions
