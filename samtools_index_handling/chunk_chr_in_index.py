@@ -3,7 +3,7 @@ import sys
 import argparse
 
 def chunk_chr_and_write_to_file(input_file, number_chunks, prefix):
-    with open(prefix + "_chunked_chr_" + str(number_chunks) + ".bed", 'w') as output_file:
+    with open(prefix + ".chunked_chr_" + str(number_chunks) + ".bed", 'w') as output_file:
         with open(input_file, 'r') as file:
             for line in file:
                 chr, length = line.split('\t')[0], line.split('\t')[1]
