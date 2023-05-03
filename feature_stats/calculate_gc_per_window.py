@@ -35,7 +35,7 @@ def calculate_gc_per_chunk(gc_file, chunks):
 #%%
 # Warning this script is slow!
 if __name__ == "__main__":
-    SCRIPT = "calculate_gc3_per_window.py"
+    SCRIPT = "calculate_gc_per_window.py"
     # Argument set up
     parser = argparse.ArgumentParser()
     parser.add_argument("-b", "--bed_file", type=str, help = "Bed file for the chunks", required=True)
